@@ -8,11 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		0C305ACD1AE9886E00C8D26E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C305ACC1AE9886E00C8D26E /* AppDelegate.swift */; };
-		0C305ACF1AE9886E00C8D26E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C305ACE1AE9886E00C8D26E /* ViewController.swift */; };
 		0C305AD21AE9886E00C8D26E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C305AD01AE9886E00C8D26E /* Main.storyboard */; };
 		0C305AD41AE9886E00C8D26E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C305AD31AE9886E00C8D26E /* Images.xcassets */; };
 		0C305AD71AE9886E00C8D26E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C305AD51AE9886E00C8D26E /* LaunchScreen.xib */; };
 		0C305AE31AE9886E00C8D26E /* giphiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C305AE21AE9886E00C8D26E /* giphiesTests.swift */; };
+		0C305AEF1AE99E4A00C8D26E /* GPSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C305AEE1AE99E4A00C8D26E /* GPSearch.swift */; };
+		0C305AF11AEA150800C8D26E /* GPSimpleSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C305AF01AEA150800C8D26E /* GPSimpleSearchController.swift */; };
+		0C305AF31AEA214C00C8D26E /* GPTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C305AF21AEA214C00C8D26E /* GPTypes.swift */; };
+		0C305AF51AEA239700C8D26E /* GPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C305AF41AEA239700C8D26E /* GPError.swift */; };
+		0C305AF71AEA31E500C8D26E /* GPDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C305AF61AEA31E500C8D26E /* GPDownloader.swift */; };
+		0C94C1831AEA4EFB00CF775A /* GPConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C94C1821AEA4EFB00CF775A /* GPConfig.swift */; };
+		0C94C18A1AEB87E700CF775A /* GPDownloadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C94C1891AEB87E700CF775A /* GPDownloadOperation.swift */; };
+		0C94C18C1AEB8ABF00CF775A /* GPGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C94C18B1AEB8ABF00CF775A /* GPGif.swift */; };
+		0C94C1921AEBB14000CF775A /* GPCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C94C1911AEBB14000CF775A /* GPCollectionViewCell.swift */; };
+		0C94C1961AEBB27E00CF775A /* GPCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C94C1951AEBB27E00CF775A /* GPCollectionViewController.swift */; };
+		0C94C19C1AEBC44800CF775A /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C94C1991AEBC44800CF775A /* FLAnimatedImage.m */; };
+		0C94C19D1AEBC44800CF775A /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C94C19B1AEBC44800CF775A /* FLAnimatedImageView.m */; };
+		0C94C1A61AEE447500CF775A /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C94C1A51AEE447500CF775A /* AFNetworkReachabilityManager.m */; };
+		0C94C1AA1AEE526700CF775A /* CHTCollectionViewWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C94C1A91AEE526700CF775A /* CHTCollectionViewWaterfallLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +42,31 @@
 		0C305AC71AE9886E00C8D26E /* giphies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = giphies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C305ACB1AE9886E00C8D26E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C305ACC1AE9886E00C8D26E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0C305ACE1AE9886E00C8D26E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0C305AD11AE9886E00C8D26E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C305AD31AE9886E00C8D26E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0C305AD61AE9886E00C8D26E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0C305ADC1AE9886E00C8D26E /* giphiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = giphiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C305AE11AE9886E00C8D26E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C305AE21AE9886E00C8D26E /* giphiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = giphiesTests.swift; sourceTree = "<group>"; };
+		0C305AEE1AE99E4A00C8D26E /* GPSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPSearch.swift; sourceTree = "<group>"; };
+		0C305AF01AEA150800C8D26E /* GPSimpleSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPSimpleSearchController.swift; sourceTree = "<group>"; };
+		0C305AF21AEA214C00C8D26E /* GPTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPTypes.swift; sourceTree = "<group>"; };
+		0C305AF41AEA239700C8D26E /* GPError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPError.swift; sourceTree = "<group>"; };
+		0C305AF61AEA31E500C8D26E /* GPDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPDownloader.swift; sourceTree = "<group>"; };
+		0C94C1821AEA4EFB00CF775A /* GPConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPConfig.swift; sourceTree = "<group>"; };
+		0C94C1891AEB87E700CF775A /* GPDownloadOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPDownloadOperation.swift; sourceTree = "<group>"; };
+		0C94C18B1AEB8ABF00CF775A /* GPGif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPGif.swift; sourceTree = "<group>"; };
+		0C94C1911AEBB14000CF775A /* GPCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPCollectionViewCell.swift; sourceTree = "<group>"; };
+		0C94C1951AEBB27E00CF775A /* GPCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPCollectionViewController.swift; sourceTree = "<group>"; };
+		0C94C1981AEBC44800CF775A /* FLAnimatedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FLAnimatedImage.h; path = FLAnimatedImage/FLAnimatedImage.h; sourceTree = "<group>"; };
+		0C94C1991AEBC44800CF775A /* FLAnimatedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FLAnimatedImage.m; path = FLAnimatedImage/FLAnimatedImage.m; sourceTree = "<group>"; };
+		0C94C19A1AEBC44800CF775A /* FLAnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FLAnimatedImageView.h; path = FLAnimatedImage/FLAnimatedImageView.h; sourceTree = "<group>"; };
+		0C94C19B1AEBC44800CF775A /* FLAnimatedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FLAnimatedImageView.m; path = FLAnimatedImage/FLAnimatedImageView.m; sourceTree = "<group>"; };
+		0C94C19E1AEBC45600CF775A /* giphies-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "giphies-Bridging-Header.h"; sourceTree = "<group>"; };
+		0C94C1A41AEE447500CF775A /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		0C94C1A51AEE447500CF775A /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		0C94C1A81AEE526700CF775A /* CHTCollectionViewWaterfallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHTCollectionViewWaterfallLayout.h; path = CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout.h; sourceTree = "<group>"; };
+		0C94C1A91AEE526700CF775A /* CHTCollectionViewWaterfallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHTCollectionViewWaterfallLayout.m; path = CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +90,7 @@
 		0C305ABE1AE9886E00C8D26E = {
 			isa = PBXGroup;
 			children = (
+				0C94C19E1AEBC45600CF775A /* giphies-Bridging-Header.h */,
 				0C305AC91AE9886E00C8D26E /* giphies */,
 				0C305ADF1AE9886E00C8D26E /* giphiesTests */,
 				0C305AC81AE9886E00C8D26E /* Products */,
@@ -77,12 +109,17 @@
 		0C305AC91AE9886E00C8D26E /* giphies */ = {
 			isa = PBXGroup;
 			children = (
-				0C305ACC1AE9886E00C8D26E /* AppDelegate.swift */,
-				0C305ACE1AE9886E00C8D26E /* ViewController.swift */,
-				0C305AD01AE9886E00C8D26E /* Main.storyboard */,
-				0C305AD31AE9886E00C8D26E /* Images.xcassets */,
-				0C305AD51AE9886E00C8D26E /* LaunchScreen.xib */,
+				0C94C1A71AEE525600CF775A /* Waterfall layout */,
+				0C94C1A31AEE446400CF775A /* Network reachability */,
+				0C94C1971AEBC42400CF775A /* Gif Solution */,
 				0C305ACA1AE9886E00C8D26E /* Supporting Files */,
+				0C305AD31AE9886E00C8D26E /* Images.xcassets */,
+				0C305AD01AE9886E00C8D26E /* Main.storyboard */,
+				0C305AD51AE9886E00C8D26E /* LaunchScreen.xib */,
+				0C305ACC1AE9886E00C8D26E /* AppDelegate.swift */,
+				0C94C1841AEA5DFB00CF775A /* static */,
+				0C94C1851AEA5E2200CF775A /* vc */,
+				0C94C1861AEA5E3800CF775A /* model */,
 			);
 			path = giphies;
 			sourceTree = "<group>";
@@ -110,6 +147,66 @@
 				0C305AE11AE9886E00C8D26E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0C94C1841AEA5DFB00CF775A /* static */ = {
+			isa = PBXGroup;
+			children = (
+				0C94C1821AEA4EFB00CF775A /* GPConfig.swift */,
+				0C305AF21AEA214C00C8D26E /* GPTypes.swift */,
+				0C305AF41AEA239700C8D26E /* GPError.swift */,
+			);
+			name = static;
+			sourceTree = "<group>";
+		};
+		0C94C1851AEA5E2200CF775A /* vc */ = {
+			isa = PBXGroup;
+			children = (
+				0C305AF01AEA150800C8D26E /* GPSimpleSearchController.swift */,
+				0C94C1951AEBB27E00CF775A /* GPCollectionViewController.swift */,
+				0C94C1911AEBB14000CF775A /* GPCollectionViewCell.swift */,
+			);
+			name = vc;
+			sourceTree = "<group>";
+		};
+		0C94C1861AEA5E3800CF775A /* model */ = {
+			isa = PBXGroup;
+			children = (
+				0C94C18B1AEB8ABF00CF775A /* GPGif.swift */,
+				0C305AEE1AE99E4A00C8D26E /* GPSearch.swift */,
+				0C305AF61AEA31E500C8D26E /* GPDownloader.swift */,
+				0C94C1891AEB87E700CF775A /* GPDownloadOperation.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		0C94C1971AEBC42400CF775A /* Gif Solution */ = {
+			isa = PBXGroup;
+			children = (
+				0C94C1981AEBC44800CF775A /* FLAnimatedImage.h */,
+				0C94C1991AEBC44800CF775A /* FLAnimatedImage.m */,
+				0C94C19A1AEBC44800CF775A /* FLAnimatedImageView.h */,
+				0C94C19B1AEBC44800CF775A /* FLAnimatedImageView.m */,
+			);
+			name = "Gif Solution";
+			sourceTree = "<group>";
+		};
+		0C94C1A31AEE446400CF775A /* Network reachability */ = {
+			isa = PBXGroup;
+			children = (
+				0C94C1A41AEE447500CF775A /* AFNetworkReachabilityManager.h */,
+				0C94C1A51AEE447500CF775A /* AFNetworkReachabilityManager.m */,
+			);
+			name = "Network reachability";
+			sourceTree = "<group>";
+		};
+		0C94C1A71AEE525600CF775A /* Waterfall layout */ = {
+			isa = PBXGroup;
+			children = (
+				0C94C1A81AEE526700CF775A /* CHTCollectionViewWaterfallLayout.h */,
+				0C94C1A91AEE526700CF775A /* CHTCollectionViewWaterfallLayout.m */,
+			);
+			name = "Waterfall layout";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +309,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C305ACF1AE9886E00C8D26E /* ViewController.swift in Sources */,
+				0C94C1921AEBB14000CF775A /* GPCollectionViewCell.swift in Sources */,
+				0C305AF31AEA214C00C8D26E /* GPTypes.swift in Sources */,
+				0C305AF11AEA150800C8D26E /* GPSimpleSearchController.swift in Sources */,
+				0C305AF51AEA239700C8D26E /* GPError.swift in Sources */,
+				0C305AF71AEA31E500C8D26E /* GPDownloader.swift in Sources */,
+				0C94C1961AEBB27E00CF775A /* GPCollectionViewController.swift in Sources */,
+				0C94C1A61AEE447500CF775A /* AFNetworkReachabilityManager.m in Sources */,
+				0C305AEF1AE99E4A00C8D26E /* GPSearch.swift in Sources */,
+				0C94C1831AEA4EFB00CF775A /* GPConfig.swift in Sources */,
+				0C94C19C1AEBC44800CF775A /* FLAnimatedImage.m in Sources */,
+				0C94C18A1AEB87E700CF775A /* GPDownloadOperation.swift in Sources */,
+				0C94C18C1AEB8ABF00CF775A /* GPGif.swift in Sources */,
+				0C94C19D1AEBC44800CF775A /* FLAnimatedImageView.m in Sources */,
 				0C305ACD1AE9886E00C8D26E /* AppDelegate.swift in Sources */,
+				0C94C1AA1AEE526700CF775A /* CHTCollectionViewWaterfallLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +455,7 @@
 				INFOPLIST_FILE = giphies/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "giphies-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -355,6 +466,7 @@
 				INFOPLIST_FILE = giphies/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "giphies-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -411,6 +523,7 @@
 				0C305AE81AE9886E00C8D26E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0C305AE91AE9886E00C8D26E /* Build configuration list for PBXNativeTarget "giphiesTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +532,7 @@
 				0C305AEB1AE9886E00C8D26E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

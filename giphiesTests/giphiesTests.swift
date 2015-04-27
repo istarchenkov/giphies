@@ -2,7 +2,7 @@
 //  giphiesTests.swift
 //  giphiesTests
 //
-//  Created by Ivan Starchenkov on 23/04/15.
+//  Created by Ivan Starchenkov on 27/04/15.
 //  Copyright (c) 2015 Ivan Starchenkov. All rights reserved.
 //
 
