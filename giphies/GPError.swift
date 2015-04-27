@@ -26,13 +26,12 @@ enum Error : Int {
     
     /**
         Get error description from code
-        
-        :param: code error code
+    
         :returns: Dict with description as value and NSLocalizedDescriptionKey as a key
     */
-    static func descriptionFrom(code : Error) -> [NSObject : AnyObject] {
+    func description() -> [NSObject : AnyObject] {
         var desc = ""
-        switch code {
+        switch self {
         case .JSONSerializationError:
             desc = "Error occured while json serialization"
         case .NoSearchResultFound:
@@ -61,7 +60,7 @@ class GPError : NSError {
         :returns: error with code and description
     */
     init(code : Error) {
-        super.init(domain: Constants.ErrorDomain, code: code.rawValue, userInfo:  Error.descriptionFrom(code))
+        super.init(domain: Constants.ErrorDomain, code: code.rawValue, userInfo:  code.description())
     }
 
     required init(coder aDecoder: NSCoder) {
