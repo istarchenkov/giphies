@@ -34,7 +34,7 @@ class GPCollectionViewController: UICollectionViewController , CHTCollectionView
         return cell
     }
 
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {                
         return CGSizeMake(contentArray[indexPath.item].contentWidth, contentArray[indexPath.item].contentHeight)
     }
     

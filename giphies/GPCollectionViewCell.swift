@@ -69,8 +69,7 @@ class GPCollectionViewCell: UICollectionViewCell {
         animatedImage = FLAnimatedImage(animatedGIFData: data)
         animatedImageView = FLAnimatedImageView()
         animatedImageView!.animatedImage = animatedImage!
-        // set image view frame from cell model size
-        animatedImageView!.frame = CGRectMake(0, 0, contentObject!.contentWidth, contentObject!.contentHeight)
+        animatedImageView!.frame = contentView.frame
         contentView.addSubview(animatedImageView!)
     }
 }
