@@ -21,8 +21,6 @@ class GPCollectionViewController: UICollectionViewController , CHTCollectionView
         super.viewDidDisappear(animated)
         // stop content download if view did disappear
         GPDownloader.shared.invalidate()
-        // stop network indicator in status bar
-        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
     }
     
     // MARK: - UICollectionViewDataSource

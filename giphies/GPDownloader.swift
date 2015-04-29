@@ -12,7 +12,7 @@ import Foundation
 private let _shared = GPDownloader()
 
 /// Download data from network provider (Singleton)
-class GPDownloader {
+class GPDownloader : NSObject {
     
     // MARK: - Singleton 
     
@@ -20,23 +20,39 @@ class GPDownloader {
         return _shared
     }
     
+    // MARK: - Init
+    
+    /// use KVO observing of queue.operationCount to encapsulate status bar network indicator behavior inside of model
+    
+    private var myContext = 0
+    
+    override init() {
+        super.init()
+        downloadQueue.addObserver(self, forKeyPath: "operationCount", options: .New, context: &myContext)
+    }
+    
+    override func observeValueForKeyPath(keyPath: String, ofObject object: AnyObject, change: [NSObject: AnyObject], context: UnsafeMutablePointer<Void>) {
+        if context == &myContext {            
+            if keyPath == "operationCount" {
+                if change[NSKeyValueChangeNewKey] as! Int == 0 {
+                    UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+                } else {
+                    UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+                }
+            }
+        }
+    }
+    
     // MARK: - Properties
     
     /// download queue lazy property
-    private lazy var downloadQueue : NSOperationQueue = {
+    private var downloadQueue : NSOperationQueue = {
         var queue = NSOperationQueue()
         queue.name = Constants.QueueIdentifier
         queue.maxConcurrentOperationCount = Config.NumberOfThreads
         return queue
     }()
-    
-    /// current number of operations in queue
-    var numberOfOperationsInQueue : Int {
-        get {
-            return downloadQueue.operationCount
-        }
-    }
-    
+        
     // MARK: - Download mgmt
     
     /**

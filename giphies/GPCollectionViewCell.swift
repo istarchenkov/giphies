@@ -24,8 +24,6 @@ class GPCollectionViewCell: UICollectionViewCell {
     var contentObject : GPGif? {
         didSet {
             if contentObject != nil {
-                // show network indicator in status bar
-                UIApplication.sharedApplication().networkActivityIndicatorVisible = true
                 // cell will display, animate loader
                 cellContentLoading.startAnimating()
                 // mark as high expected content
@@ -38,10 +36,6 @@ class GPCollectionViewCell: UICollectionViewCell {
                         self?.cellContentLoading.stopAnimating()
                         // add animated image
                         self?.addAnimatedImageFrom(contentData)
-                        // hide network indicator in status bar if number of active ops in download queue = 0
-                        if GPDownloader.shared.numberOfOperationsInQueue == 0 {
-                            UIApplication.sharedApplication().networkActivityIndicatorVisible = false
-                        }
                     }
                 }
             } else {

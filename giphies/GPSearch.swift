@@ -21,6 +21,8 @@ class GPSearch {
         :param: handler Callback closure
     */
     func searchFor(query : String , completion handler : SearchCallback) {
+        // show status bar network indicator
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
         // convert plain string
         if let requestUrl = urlForQuery(query) {
             // check if network unreachable
@@ -30,6 +32,8 @@ class GPSearch {
             } else {
                 // else perform async urlrequest via nssession
                 NSURLSession.sharedSession().dataTaskWithURL(requestUrl) { [weak self] (data, response, error)  in
+                    // hide status bar network indicator
+                    UIApplication.sharedApplication().networkActivityIndicatorVisible = false
                     // check if error occured
                     if error != nil {
                         // throw it to callback closure

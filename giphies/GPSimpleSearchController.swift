@@ -61,8 +61,6 @@ class GPSimpleSearchController: UIViewController, UITextFieldDelegate {
         :param: query String of url query
     */
     private func search(query : String) {
-        // show status bar network indicator
-        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
         // disable text field from user interaction
         searchTextField.userInteractionEnabled = false
         // start loader animation
@@ -74,8 +72,6 @@ class GPSimpleSearchController: UIViewController, UITextFieldDelegate {
             if let strongSelf = self {
                 // perform ui interaction in main queue
                 dispatch_async(dispatch_get_main_queue()) {
-                    // hide status bar network indicator
-                    UIApplication.sharedApplication().networkActivityIndicatorVisible = false
                     // enable text field for user interaction
                     strongSelf.searchTextField.userInteractionEnabled = true
                     // stop loader animation
