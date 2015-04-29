@@ -17,6 +17,22 @@
 		0C305AF31AEA214C00C8D26E /* GPTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C305AF21AEA214C00C8D26E /* GPTypes.swift */; };
 		0C305AF51AEA239700C8D26E /* GPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C305AF41AEA239700C8D26E /* GPError.swift */; };
 		0C305AF71AEA31E500C8D26E /* GPDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C305AF61AEA31E500C8D26E /* GPDownloader.swift */; };
+		0C7424E51AEFBCF700C643A9 /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C94C1991AEBC44800CF775A /* FLAnimatedImage.m */; };
+		0C7424E61AEFBCF900C643A9 /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C94C19B1AEBC44800CF775A /* FLAnimatedImageView.m */; };
+		0C7424E71AEFBCFC00C643A9 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C94C1A51AEE447500CF775A /* AFNetworkReachabilityManager.m */; };
+		0C7424E81AEFBCFF00C643A9 /* CHTCollectionViewWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C94C1A91AEE526700CF775A /* CHTCollectionViewWaterfallLayout.m */; };
+		0C7424E91AEFBD0200C643A9 /* GPConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C94C1821AEA4EFB00CF775A /* GPConfig.swift */; };
+		0C7424EA1AEFBD0600C643A9 /* GPTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C305AF21AEA214C00C8D26E /* GPTypes.swift */; };
+		0C7424EB1AEFBD0900C643A9 /* GPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C305AF41AEA239700C8D26E /* GPError.swift */; };
+		0C7424EC1AEFBD0F00C643A9 /* GPSimpleSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C305AF01AEA150800C8D26E /* GPSimpleSearchController.swift */; };
+		0C7424ED1AEFBD1200C643A9 /* GPCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C94C1911AEBB14000CF775A /* GPCollectionViewCell.swift */; };
+		0C7424EE1AEFBD1500C643A9 /* GPCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C94C1951AEBB27E00CF775A /* GPCollectionViewController.swift */; };
+		0C7424EF1AEFBD1800C643A9 /* GPGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C94C18B1AEB8ABF00CF775A /* GPGif.swift */; };
+		0C7424F01AEFBD1800C643A9 /* GPSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C305AEE1AE99E4A00C8D26E /* GPSearch.swift */; };
+		0C7424F11AEFBD1800C643A9 /* GPDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C305AF61AEA31E500C8D26E /* GPDownloader.swift */; };
+		0C7424F21AEFBD1800C643A9 /* GPDownloadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C94C1891AEB87E700CF775A /* GPDownloadOperation.swift */; };
+		0C7424F51AEFCEE100C643A9 /* GPParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7424F41AEFCEE100C643A9 /* GPParser.swift */; };
+		0C7424F61AEFCEE100C643A9 /* GPParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7424F41AEFCEE100C643A9 /* GPParser.swift */; };
 		0C94C1831AEA4EFB00CF775A /* GPConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C94C1821AEA4EFB00CF775A /* GPConfig.swift */; };
 		0C94C18A1AEB87E700CF775A /* GPDownloadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C94C1891AEB87E700CF775A /* GPDownloadOperation.swift */; };
 		0C94C18C1AEB8ABF00CF775A /* GPGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C94C18B1AEB8ABF00CF775A /* GPGif.swift */; };
@@ -53,6 +69,8 @@
 		0C305AF21AEA214C00C8D26E /* GPTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPTypes.swift; sourceTree = "<group>"; };
 		0C305AF41AEA239700C8D26E /* GPError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPError.swift; sourceTree = "<group>"; };
 		0C305AF61AEA31E500C8D26E /* GPDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPDownloader.swift; sourceTree = "<group>"; };
+		0C7424F31AEFBD6500C643A9 /* tests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "tests-Bridging-Header.h"; sourceTree = "<group>"; };
+		0C7424F41AEFCEE100C643A9 /* GPParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPParser.swift; sourceTree = "<group>"; };
 		0C94C1821AEA4EFB00CF775A /* GPConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPConfig.swift; sourceTree = "<group>"; };
 		0C94C1891AEB87E700CF775A /* GPDownloadOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPDownloadOperation.swift; sourceTree = "<group>"; };
 		0C94C18B1AEB8ABF00CF775A /* GPGif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPGif.swift; sourceTree = "<group>"; };
@@ -90,6 +108,7 @@
 		0C305ABE1AE9886E00C8D26E = {
 			isa = PBXGroup;
 			children = (
+				0C7424F31AEFBD6500C643A9 /* tests-Bridging-Header.h */,
 				0C94C19E1AEBC45600CF775A /* giphies-Bridging-Header.h */,
 				0C305AC91AE9886E00C8D26E /* giphies */,
 				0C305ADF1AE9886E00C8D26E /* giphiesTests */,
@@ -176,6 +195,7 @@
 				0C305AEE1AE99E4A00C8D26E /* GPSearch.swift */,
 				0C305AF61AEA31E500C8D26E /* GPDownloader.swift */,
 				0C94C1891AEB87E700CF775A /* GPDownloadOperation.swift */,
+				0C7424F41AEFCEE100C643A9 /* GPParser.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -322,6 +342,7 @@
 				0C94C18A1AEB87E700CF775A /* GPDownloadOperation.swift in Sources */,
 				0C94C18C1AEB8ABF00CF775A /* GPGif.swift in Sources */,
 				0C94C19D1AEBC44800CF775A /* FLAnimatedImageView.m in Sources */,
+				0C7424F51AEFCEE100C643A9 /* GPParser.swift in Sources */,
 				0C305ACD1AE9886E00C8D26E /* AppDelegate.swift in Sources */,
 				0C94C1AA1AEE526700CF775A /* CHTCollectionViewWaterfallLayout.m in Sources */,
 			);
@@ -331,7 +352,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C7424F21AEFBD1800C643A9 /* GPDownloadOperation.swift in Sources */,
+				0C7424E91AEFBD0200C643A9 /* GPConfig.swift in Sources */,
+				0C7424EB1AEFBD0900C643A9 /* GPError.swift in Sources */,
+				0C7424EC1AEFBD0F00C643A9 /* GPSimpleSearchController.swift in Sources */,
+				0C7424E81AEFBCFF00C643A9 /* CHTCollectionViewWaterfallLayout.m in Sources */,
+				0C7424EE1AEFBD1500C643A9 /* GPCollectionViewController.swift in Sources */,
+				0C7424EA1AEFBD0600C643A9 /* GPTypes.swift in Sources */,
+				0C7424ED1AEFBD1200C643A9 /* GPCollectionViewCell.swift in Sources */,
+				0C7424E51AEFBCF700C643A9 /* FLAnimatedImage.m in Sources */,
+				0C7424F01AEFBD1800C643A9 /* GPSearch.swift in Sources */,
 				0C305AE31AE9886E00C8D26E /* giphiesTests.swift in Sources */,
+				0C7424E71AEFBCFC00C643A9 /* AFNetworkReachabilityManager.m in Sources */,
+				0C7424F11AEFBD1800C643A9 /* GPDownloader.swift in Sources */,
+				0C7424F61AEFCEE100C643A9 /* GPParser.swift in Sources */,
+				0C7424E61AEFBCF900C643A9 /* FLAnimatedImageView.m in Sources */,
+				0C7424EF1AEFBD1800C643A9 /* GPGif.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +521,7 @@
 				INFOPLIST_FILE = giphiesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "tests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/giphies.app/giphies";
 			};
 			name = Debug;
@@ -500,6 +537,7 @@
 				INFOPLIST_FILE = giphiesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "tests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/giphies.app/giphies";
 			};
 			name = Release;
