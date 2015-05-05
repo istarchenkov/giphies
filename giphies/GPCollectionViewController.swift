@@ -21,6 +21,11 @@ class GPCollectionViewController: UICollectionViewController , CHTCollectionView
         super.viewDidDisappear(animated)
         // stop content download if view did disappear
         GPDownloader.shared.invalidate()
+        
+        // set nil models to all visible cells to remove them from KVO observing
+        for cell in collectionView!.visibleCells() {
+            (cell as! GPCollectionViewCell).contentObject = nil
+        }
     }
     
     // MARK: - UICollectionViewDataSource

@@ -114,6 +114,11 @@ class GPDownloadOperation: NSOperation, NSURLConnectionDataDelegate {
     }
     
     func connection(connection: NSURLConnection, didReceiveData data: NSData) {
+        if cancelled {
+            connection.cancel()
+            state = .Finished
+            return
+        }
         downloadedData!.appendData(data)
         ownedBytes += data.length
     }
@@ -124,7 +129,7 @@ class GPDownloadOperation: NSOperation, NSURLConnectionDataDelegate {
     }
 
     func connection(connection: NSURLConnection, didFailWithError error: NSError) {
-        state = .Finished
         println("Download operation did fail with error \(error)")
+        state = .Finished
     }
 }
