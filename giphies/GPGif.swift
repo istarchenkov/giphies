@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GPGif {
+class GPGif : NSObject {
 
     // MARK: - properties
     
@@ -26,6 +26,16 @@ class GPGif {
             if contentRecieveHandler != nil && contentData != nil  {
                 contentRecieveHandler!(contentUrlString : contentUrlStirng , contentData : contentData!)
             }
+        }
+    }
+    
+    /// content download progress, KVO compliant
+    var contentDownloadProgress : Double = 0 {
+        willSet {
+            willChangeValueForKey("contentDownloadProgress")
+        }
+        didSet {
+            didChangeValueForKey("contentDownloadProgress")
         }
     }
     

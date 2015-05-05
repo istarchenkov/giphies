@@ -17,6 +17,8 @@
 		0C305AF31AEA214C00C8D26E /* GPTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C305AF21AEA214C00C8D26E /* GPTypes.swift */; };
 		0C305AF51AEA239700C8D26E /* GPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C305AF41AEA239700C8D26E /* GPError.swift */; };
 		0C305AF71AEA31E500C8D26E /* GPDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C305AF61AEA31E500C8D26E /* GPDownloader.swift */; };
+		0C47CC631AF904B9002D0755 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C305AD01AE9886E00C8D26E /* Main.storyboard */; };
+		0C47CC641AF90509002D0755 /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA212F41AF8F71C00503725 /* CircleProgressView.swift */; };
 		0C7424E51AEFBCF700C643A9 /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C94C1991AEBC44800CF775A /* FLAnimatedImage.m */; };
 		0C7424E61AEFBCF900C643A9 /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C94C19B1AEBC44800CF775A /* FLAnimatedImageView.m */; };
 		0C7424E71AEFBCFC00C643A9 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C94C1A51AEE447500CF775A /* AFNetworkReachabilityManager.m */; };
@@ -42,6 +44,7 @@
 		0C94C19D1AEBC44800CF775A /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C94C19B1AEBC44800CF775A /* FLAnimatedImageView.m */; };
 		0C94C1A61AEE447500CF775A /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C94C1A51AEE447500CF775A /* AFNetworkReachabilityManager.m */; };
 		0C94C1AA1AEE526700CF775A /* CHTCollectionViewWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C94C1A91AEE526700CF775A /* CHTCollectionViewWaterfallLayout.m */; };
+		0CA212F51AF8F71C00503725 /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA212F41AF8F71C00503725 /* CircleProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +88,7 @@
 		0C94C1A51AEE447500CF775A /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
 		0C94C1A81AEE526700CF775A /* CHTCollectionViewWaterfallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHTCollectionViewWaterfallLayout.h; path = CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout.h; sourceTree = "<group>"; };
 		0C94C1A91AEE526700CF775A /* CHTCollectionViewWaterfallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHTCollectionViewWaterfallLayout.m; path = CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout.m; sourceTree = "<group>"; };
+		0CA212F41AF8F71C00503725 /* CircleProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircleProgressView.swift; path = CircleProgressView/CircleProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,7 @@
 		0C305AC91AE9886E00C8D26E /* giphies */ = {
 			isa = PBXGroup;
 			children = (
+				0CA212F31AF8F70C00503725 /* Progress View */,
 				0C94C1A71AEE525600CF775A /* Waterfall layout */,
 				0C94C1A31AEE446400CF775A /* Network reachability */,
 				0C94C1971AEBC42400CF775A /* Gif Solution */,
@@ -229,6 +234,14 @@
 			name = "Waterfall layout";
 			sourceTree = "<group>";
 		};
+		0CA212F31AF8F70C00503725 /* Progress View */ = {
+			isa = PBXGroup;
+			children = (
+				0CA212F41AF8F71C00503725 /* CircleProgressView.swift */,
+			);
+			name = "Progress View";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -319,6 +332,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C47CC631AF904B9002D0755 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +349,7 @@
 				0C305AF51AEA239700C8D26E /* GPError.swift in Sources */,
 				0C305AF71AEA31E500C8D26E /* GPDownloader.swift in Sources */,
 				0C94C1961AEBB27E00CF775A /* GPCollectionViewController.swift in Sources */,
+				0CA212F51AF8F71C00503725 /* CircleProgressView.swift in Sources */,
 				0C94C1A61AEE447500CF775A /* AFNetworkReachabilityManager.m in Sources */,
 				0C305AEF1AE99E4A00C8D26E /* GPSearch.swift in Sources */,
 				0C94C1831AEA4EFB00CF775A /* GPConfig.swift in Sources */,
@@ -358,6 +373,7 @@
 				0C7424EC1AEFBD0F00C643A9 /* GPSearchViewController.swift in Sources */,
 				0C7424E81AEFBCFF00C643A9 /* CHTCollectionViewWaterfallLayout.m in Sources */,
 				0C7424EE1AEFBD1500C643A9 /* GPCollectionViewController.swift in Sources */,
+				0C47CC641AF90509002D0755 /* CircleProgressView.swift in Sources */,
 				0C7424EA1AEFBD0600C643A9 /* GPTypes.swift in Sources */,
 				0C7424ED1AEFBD1200C643A9 /* GPCollectionViewCell.swift in Sources */,
 				0C7424E51AEFBCF700C643A9 /* FLAnimatedImage.m in Sources */,
