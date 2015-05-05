@@ -13,7 +13,7 @@
 		0C305AD71AE9886E00C8D26E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C305AD51AE9886E00C8D26E /* LaunchScreen.xib */; };
 		0C305AE31AE9886E00C8D26E /* giphiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C305AE21AE9886E00C8D26E /* giphiesTests.swift */; };
 		0C305AEF1AE99E4A00C8D26E /* GPSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C305AEE1AE99E4A00C8D26E /* GPSearch.swift */; };
-		0C305AF11AEA150800C8D26E /* GPSimpleSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C305AF01AEA150800C8D26E /* GPSimpleSearchController.swift */; };
+		0C305AF11AEA150800C8D26E /* GPSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C305AF01AEA150800C8D26E /* GPSearchViewController.swift */; };
 		0C305AF31AEA214C00C8D26E /* GPTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C305AF21AEA214C00C8D26E /* GPTypes.swift */; };
 		0C305AF51AEA239700C8D26E /* GPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C305AF41AEA239700C8D26E /* GPError.swift */; };
 		0C305AF71AEA31E500C8D26E /* GPDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C305AF61AEA31E500C8D26E /* GPDownloader.swift */; };
@@ -24,7 +24,7 @@
 		0C7424E91AEFBD0200C643A9 /* GPConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C94C1821AEA4EFB00CF775A /* GPConfig.swift */; };
 		0C7424EA1AEFBD0600C643A9 /* GPTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C305AF21AEA214C00C8D26E /* GPTypes.swift */; };
 		0C7424EB1AEFBD0900C643A9 /* GPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C305AF41AEA239700C8D26E /* GPError.swift */; };
-		0C7424EC1AEFBD0F00C643A9 /* GPSimpleSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C305AF01AEA150800C8D26E /* GPSimpleSearchController.swift */; };
+		0C7424EC1AEFBD0F00C643A9 /* GPSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C305AF01AEA150800C8D26E /* GPSearchViewController.swift */; };
 		0C7424ED1AEFBD1200C643A9 /* GPCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C94C1911AEBB14000CF775A /* GPCollectionViewCell.swift */; };
 		0C7424EE1AEFBD1500C643A9 /* GPCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C94C1951AEBB27E00CF775A /* GPCollectionViewController.swift */; };
 		0C7424EF1AEFBD1800C643A9 /* GPGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C94C18B1AEB8ABF00CF775A /* GPGif.swift */; };
@@ -65,7 +65,7 @@
 		0C305AE11AE9886E00C8D26E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C305AE21AE9886E00C8D26E /* giphiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = giphiesTests.swift; sourceTree = "<group>"; };
 		0C305AEE1AE99E4A00C8D26E /* GPSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPSearch.swift; sourceTree = "<group>"; };
-		0C305AF01AEA150800C8D26E /* GPSimpleSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPSimpleSearchController.swift; sourceTree = "<group>"; };
+		0C305AF01AEA150800C8D26E /* GPSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPSearchViewController.swift; sourceTree = "<group>"; };
 		0C305AF21AEA214C00C8D26E /* GPTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPTypes.swift; sourceTree = "<group>"; };
 		0C305AF41AEA239700C8D26E /* GPError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPError.swift; sourceTree = "<group>"; };
 		0C305AF61AEA31E500C8D26E /* GPDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPDownloader.swift; sourceTree = "<group>"; };
@@ -181,7 +181,7 @@
 		0C94C1851AEA5E2200CF775A /* vc */ = {
 			isa = PBXGroup;
 			children = (
-				0C305AF01AEA150800C8D26E /* GPSimpleSearchController.swift */,
+				0C305AF01AEA150800C8D26E /* GPSearchViewController.swift */,
 				0C94C1951AEBB27E00CF775A /* GPCollectionViewController.swift */,
 				0C94C1911AEBB14000CF775A /* GPCollectionViewCell.swift */,
 			);
@@ -331,7 +331,7 @@
 			files = (
 				0C94C1921AEBB14000CF775A /* GPCollectionViewCell.swift in Sources */,
 				0C305AF31AEA214C00C8D26E /* GPTypes.swift in Sources */,
-				0C305AF11AEA150800C8D26E /* GPSimpleSearchController.swift in Sources */,
+				0C305AF11AEA150800C8D26E /* GPSearchViewController.swift in Sources */,
 				0C305AF51AEA239700C8D26E /* GPError.swift in Sources */,
 				0C305AF71AEA31E500C8D26E /* GPDownloader.swift in Sources */,
 				0C94C1961AEBB27E00CF775A /* GPCollectionViewController.swift in Sources */,
@@ -355,7 +355,7 @@
 				0C7424F21AEFBD1800C643A9 /* GPDownloadOperation.swift in Sources */,
 				0C7424E91AEFBD0200C643A9 /* GPConfig.swift in Sources */,
 				0C7424EB1AEFBD0900C643A9 /* GPError.swift in Sources */,
-				0C7424EC1AEFBD0F00C643A9 /* GPSimpleSearchController.swift in Sources */,
+				0C7424EC1AEFBD0F00C643A9 /* GPSearchViewController.swift in Sources */,
 				0C7424E81AEFBCFF00C643A9 /* CHTCollectionViewWaterfallLayout.m in Sources */,
 				0C7424EE1AEFBD1500C643A9 /* GPCollectionViewController.swift in Sources */,
 				0C7424EA1AEFBD0600C643A9 /* GPTypes.swift in Sources */,

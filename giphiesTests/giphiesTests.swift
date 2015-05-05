@@ -41,4 +41,37 @@ class giphiesTests: XCTestCase {
             XCTFail("Parsed dict should not be nil")
         }
     }
+    
+    /// test search for empty query (network should be reachable to pass)
+    func testEmptySearchQuery() {
+        let expectation = expectationWithDescription("SEARCH QUERY")
+        let query = " "
+        GPSearch().searchFor(query) { (response,error) in
+            XCTAssertNotNil(error, "Invalid query should return error")
+            if error != nil {
+                XCTAssertEqual(error!, GPError(code: .NoSearchResultFound), "Space query should return no result error")
+            }
+            expectation.fulfill()
+        }
+        waitForExpectationsWithTimeout(10) { (e) in
+            
+        }
+    }
+    
+    /// test search for valid query (network should be reachable to pass)
+    func testValidSearchQuery() {
+        let expectation = expectationWithDescription("SEARCH QUERY")
+        let query = "cats"
+        GPSearch().searchFor(query) { (response,error) in
+            XCTAssertNil(error, "Valid query should return no error")
+            XCTAssertNotNil(response, "Valid query should return not nil response")
+            if response != nil {
+                XCTAssertEqual(response!.count, 100, "Response should contain 100 members")
+            }
+            expectation.fulfill()
+        }
+        waitForExpectationsWithTimeout(10) { (e) in
+            
+        }
+    }
 }

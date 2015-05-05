@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
-        <!--Simple Search Controller-->
+        <!--Search View Controller-->
         <scene sceneID="dzr-lT-ctY">
             <objects>
-                <viewController id="A7J-DJ-Oq5" customClass="GPSimpleSearchController" customModule="giphies" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="A7J-DJ-Oq5" customClass="GPSearchViewController" customModule="giphies" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="d8G-MC-0YX"/>
                         <viewControllerLayoutGuide type="bottom" id="Bi8-Yg-aDC"/>

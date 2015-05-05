@@ -1,5 +1,5 @@
 //
-//  GPSimpleSearchController.swift
+//  GPSearchViewController.swift
 //  giphies
 //
 //  Created by Ivan Starchenkov on 27/04/15.
@@ -9,7 +9,7 @@
 import UIKit
 
 /// Search view controller
-class GPSimpleSearchController: UIViewController, UITextFieldDelegate {
+class GPSearchViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: - IB & properties
     
